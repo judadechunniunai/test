@@ -1,0 +1,20 @@
+spring:
+  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql:///zhihuitu?serverTimezone=GMT%2b8&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    #testOnBorrow: true
+    #validationQuery: select 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat.maxActive: 20
+    tomcat.initialSize: 1
+    tomcat.maxWait: 60000
+    tomcat.minIdle: 1
+    tomcat.validationQuery: select 1
+    tomcat.testWhileIdle: true
+    tomcat.testOnBorrow: false
+    tomcat.testOnReturn: false
+
+
+
